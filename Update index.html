@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="monetag" content="4b6e607000b325393c672d431a97e6c3">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boolean1 Gallery</title>
+<title>Boolean72 Gallery</title>
+
+<!-- 🔄 Auto refresh every 5 seconds -->
+<meta http-equiv="refresh" content="5">
 
 <style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
         background: #0f0f0f;
         color: white;
+        font-family: Arial, sans-serif;
         text-align: center;
     }
 
@@ -18,100 +21,84 @@
         padding: 15px;
         background: #111;
         border-bottom: 2px solid orange;
+        color: orange;
         font-size: 20px;
         font-weight: bold;
-        color: orange;
     }
 
     .container {
         max-width: 800px;
         margin: auto;
-        padding: 20px;
+        padding: 15px;
     }
 
     img {
         width: 100%;
-        max-height: 75vh;
+        max-height: 80vh;
         object-fit: contain;
-        border-radius: 10px;
         border: 2px solid orange;
+        border-radius: 10px;
         background: black;
     }
 
-    .controls {
-        margin-top: 15px;
-    }
-
-    button {
-        background: orange;
-        border: none;
-        padding: 10px 20px;
-        margin: 5px;
-        font-weight: bold;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-
-    button:hover {
-        background: #ffb347;
-    }
-
-    .counter {
-        margin-top: 10px;
-        color: #aaa;
+    .ad {
+        margin: 15px 0;
     }
 </style>
 </head>
 
 <body>
 
-<header>Boolean1 Gallery</header>
+<header>Boolean72 Gallery</header>
 
-<div class="container">
-    <img id="galleryImage" src="https://i.postimg.cc/VN9Nrsdb/file-00000000272c71fd9deb24f568e0f533.png">
-
-    <div class="controls">
-        <button onclick="prevImage()">Prev</button>
-        <button onclick="nextImage()">Next</button>
-    </div>
-
-    <div class="counter" id="counter">1 / 10</div>
+<!-- 🔥 TOP BANNER AD -->
+<div class="ad">
+<script>
+  atOptions = {
+    'key' : '857ced5da8103c011bc506cb8f2dcce7',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/857ced5da8103c011bc506cb8f2dcce7/invoke.js"></script>
 </div>
 
-<script>
-const images = [
-"https://i.postimg.cc/VN9Nrsdb/file-00000000272c71fd9deb24f568e0f533.png",
-"https://i.postimg.cc/FR9HjtLs/file-000000002cb071fdb08a99796ccb0a0b.png",
-"https://i.postimg.cc/PqbqpfPn/file-00000000368471f4bcdb105f093a0398.png",
-"https://i.postimg.cc/nLKLjVCZ/file-00000000475071f497aa31af23d48f17.png",
-"https://i.postimg.cc/nzHhv8Dz/file-00000000536471f68ba25dae61c7afda.png",
-"https://i.postimg.cc/FKbKdF7F/file-00000000a16071f487d5581763f850d9.png",
-"https://i.postimg.cc/nLKLjVCD/file-00000000c8b471f69339d13e1f330876.png",
-"https://i.postimg.cc/Z5dnmxmn/file-00000000c9d471f4b020a0cd19d1eaee.png",
-"https://i.postimg.cc/9MWQG37z/file-00000000d1b071f583afc9ddca9c7100.png",
-"https://i.postimg.cc/FKXRHks4/file-00000000f91c71f48bee29c41e5371a4.png"
-];
+<div class="container">
 
-let index = 0;
+    <!-- IMAGE -->
+    <img src="https://i.postimg.cc/vmkFYHgQ/file-00000000368471f4bcdb105f093a0398.jpg">
 
-const img = document.getElementById("galleryImage");
-const counter = document.getElementById("counter");
+    <!-- 🔥 MIDDLE AD -->
+    <div class="ad">
+    <script>
+      atOptions = {
+        'key' : 'bde308f0c3cb194a0fc33782af449bb5',
+        'format' : 'iframe',
+        'height' : 300,
+        'width' : 160,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/bde308f0c3cb194a0fc33782af449bb5/invoke.js"></script>
+    </div>
 
-function updateImage() {
-    img.src = images[index];
-    counter.textContent = (index + 1) + " / " + images.length;
-}
+    <!-- 🔥 BOTTOM AD -->
+    <div class="ad">
+    <script>
+      atOptions = {
+        'key' : 'd07b85fbf9bd5519082bbfc40588a368',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/d07b85fbf9bd5519082bbfc40588a368/invoke.js"></script>
+    </div>
 
-function nextImage() {
-    index = (index + 1) % images.length;
-    updateImage();
-}
-
-function prevImage() {
-    index = (index - 1 + images.length) % images.length;
-    updateImage();
-}
-</script>
+</div>
 
 </body>
 </html>
